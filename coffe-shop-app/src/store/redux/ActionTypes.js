@@ -1,0 +1,5 @@
+export const ACTION_TYPES = {
+    GET_COFFEES: "GET_COFFEES",
+    GET_ORDERS: "GET_ORDERS",
+    ADD_ORDER: "ADD_ORDER"
+}
