@@ -1,13 +1,33 @@
-@import 'bootstrap';
+@import "bootstrap";
+body {
+  background-color: #00704A;
+}
 
 .navbar {
   a {
-      margin-right:2em;
-      color: #000;
-      font-weight: 500;
-      text-decoration: none;
-      &:hover {
-          color: gray;
-      }
+    margin-right: 1.5rem;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    &:hover {
+      color: gray;
+    }
   }
+}
+
+#home {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#fff;
+  h1 {
+    font-weight: 700;
+    font-size: 4em;
+    padding: 0 0.3em;
+  }
+}
+
+.card{
+  cursor:pointer;
 }

@@ -5,6 +5,7 @@ import { getCoffees } from './store/redux/Coffees/CoffeeActions';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Products from './Components/Shop/Products';
+import Home from './Components/Home';
 
 
 
@@ -23,7 +24,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path="/">
-            Home
+            <Home />
           </Route>
           <Route exact path="/Shop">
             <Products />

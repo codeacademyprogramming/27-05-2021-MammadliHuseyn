@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 function Navbar() {
     return (
         <BootstrapNavbar bg="light" expand="lg">
-            <BootstrapNavbar.Brand href="/"><img src={coflogo} alt="logo" width="40" /></BootstrapNavbar.Brand>
+            <BootstrapNavbar.Brand href="/"><img src={coflogo} alt="logo" width="50" /></BootstrapNavbar.Brand>
             <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" />
             <BootstrapNavbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">

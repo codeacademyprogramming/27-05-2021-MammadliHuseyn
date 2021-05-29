@@ -1,6 +1,5 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 
 function ProductItem({ product }) {
     return (
@@ -12,7 +11,6 @@ function ProductItem({ product }) {
                     <Card.Text>
                         {product.description.substring(0, 100)}...
                     </Card.Text>
-                    {/* <Button variant="primary" className="w-100">Add</Button> */}
                 </Card.Body>
             </Card>
         </div>
