@@ -1,12 +1,12 @@
 import { ACTION_TYPES } from './../ActionTypes';
 
-const getOrders = () => {
+export const getOrders = () => {
     return {
         type: ACTION_TYPES.GET_ORDERS
     }
 }
 
-const addOrder = (order) => {
+export const addOrder = (order) => {
     return {
         type: ACTION_TYPES.ADD_ORDER,
         payload: order

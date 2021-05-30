@@ -4,7 +4,7 @@ import { Animated } from "react-animated-css";
 function Home() {
     return (
         <div id='home'>
-            <Animated animationIn="slideInLeft" animationOut="fadeOut">
+            <Animated animationIn="slideInDown" animationOut="fadeOut">
                 <h1>Welcome Starbucks</h1>
             </Animated>
         </div>

@@ -5,10 +5,10 @@ const OrderReducer = (state = [], action) => {
         case ACTION_TYPES.GET_ORDERS:
             return state;
         case ACTION_TYPES.ADD_ORDER:
-            return {
+            return [
                 ...state,
-                ...action.payload
-            }
+                action.payload
+            ]
 
         default:
             return state;
