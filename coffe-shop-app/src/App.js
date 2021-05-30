@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-d
 import Navbar from './Components/Navbar';
 import Products from './Components/Shop/Products';
 import Home from './Components/Home';
+import Orders from './Components/Shop/Orders';
 
 
 
@@ -30,7 +31,7 @@ function App() {
             <Products />
           </Route>
           <Route exact path="/Kitchen">
-            Kitchen
+            <Orders />
           </Route>
           <Redirect to='/' />
         </Switch>

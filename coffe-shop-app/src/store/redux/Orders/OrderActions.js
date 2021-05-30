@@ -12,3 +12,10 @@ export const addOrder = (order) => {
         payload: order
     }
 }
+
+export const editOrder = (order) => {
+    return {
+        type: ACTION_TYPES.EDIT_ORDER,
+        payload: order
+    }
+}

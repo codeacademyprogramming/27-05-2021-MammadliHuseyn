@@ -24,17 +24,18 @@ function ProductItem({ product }) {
                         <Card.Title>{product.title}</Card.Title>
                         <Card.Text>
                             {product.description.substring(0, 100)}...
-                    </Card.Text>
-                        <OrderDialog
-                            open={open}
-                            handleClose={handleClose}
-                            title={product.title}
-                            description={product.description}
-                            id={product.id}
-                        />
+                        </Card.Text>
                     </Card.Body>
                 </Card>
             </Animated>
+            <OrderDialog
+                open={open}
+                handleClose={handleClose}
+                handleClickOpen={handleClickOpen}
+                title={product.title}
+                description={product.description}
+                id={product.id}
+            />
         </div>
     )
 }

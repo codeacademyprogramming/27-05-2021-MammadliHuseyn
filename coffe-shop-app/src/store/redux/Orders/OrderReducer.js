@@ -9,6 +9,13 @@ const OrderReducer = (state = [], action) => {
                 ...state,
                 action.payload
             ]
+        case ACTION_TYPES.EDIT_ORDER:
+            return state.map(order => {
+                if (order.id === action.payload.id) {
+                    return action.payload;
+                }
+                return order;
+            })
 
         default:
             return state;
