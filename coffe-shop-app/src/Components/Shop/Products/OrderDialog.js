@@ -17,6 +17,7 @@ function OrderDialog({ open, handleClose, handleClickOpen, title, description, i
 
     const [qty, setQty] = React.useState(1);
     const [submitSuccess, setSubmitSuccess] = React.useState(false);
+    const [specialNote, setSpecialNote] = React.useState('');
 
     const dispatch = useDispatch();
 
@@ -25,7 +26,8 @@ function OrderDialog({ open, handleClose, handleClickOpen, title, description, i
             {
                 id,
                 qty: parseInt(qty),
-                status: ORDER_STATUS.CREATED
+                status: ORDER_STATUS.CREATED,
+                note:specialNote
             }
         ));
         setSubmitSuccess(true);
@@ -34,10 +36,13 @@ function OrderDialog({ open, handleClose, handleClickOpen, title, description, i
         }, 800);
     }
 
-    const qtyChangeHandler = (value) => {
+    const qtyChangeHandler = value => {
         if (value > 0) {
             setQty(value);
         }
+    }
+    const speacialNoteChangeHandler = value => {
+        setSpecialNote(value);
     }
 
     return (
@@ -56,6 +61,16 @@ function OrderDialog({ open, handleClose, handleClickOpen, title, description, i
                         type="number"
                         onChange={e => qtyChangeHandler(e.target.value)}
                         value={qty}
+
+                    />
+                    <TextField
+                        margin="dense"
+                        id="specialNote"
+                        label="Special Note"
+                        type="text"
+                        fullWidth
+                        onChange={e => speacialNoteChangeHandler(e.target.value)}
+                        value={specialNote}
 
                     />
                 </DialogContent>

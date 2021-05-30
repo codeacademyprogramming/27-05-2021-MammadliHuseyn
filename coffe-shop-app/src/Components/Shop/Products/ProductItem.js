@@ -16,7 +16,7 @@ function ProductItem({ product }) {
     }
 
     return (
-        <div className="col-3 mb-3">
+        <div className="col-lg-3 col-md-6 col-12 mb-3">
             <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
                 <Card onClick={handleClickOpen}>
                     <Card.Img variant="top" src={`assets/img/${product.img}`} width="100" height="200" />

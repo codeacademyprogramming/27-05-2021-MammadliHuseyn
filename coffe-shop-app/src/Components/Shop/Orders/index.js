@@ -15,13 +15,14 @@ function Orders() {
         setSortedByStatus(orders);
     }, [orders])
 
-    const getOrder = (order) => {
+    const getOrder = order => {
         const coffee = coffees.find(c => c.id === order.id);
         return ({
             id: order.id,
             title: coffee.title,
             qty: order.qty,
             img: coffee.img,
+            note: order.note,
             status: order.status
         })
     }
@@ -44,6 +45,7 @@ function Orders() {
                             <th>#</th>
                             <th>Img</th>
                             <th>Name</th>
+                            <th>Special note</th>
                             <th>Qty</th>
                             <th onClick={() => sortByStatus()} id="th-status">Status</th>
                         </tr>
