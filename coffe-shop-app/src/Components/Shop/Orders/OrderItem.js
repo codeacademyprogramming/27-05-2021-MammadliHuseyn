@@ -4,7 +4,7 @@ import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import Button from '@material-ui/core/Button';
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
-import { editOrder } from './../../../store/redux/Orders/OrderActions';
+import { editOrder, deleteOrder } from './../../../store/redux/Orders/OrderActions';
 import { useDispatch } from 'react-redux';
 
 function OrderItem({ orderItem, idx }) {
@@ -21,8 +21,15 @@ function OrderItem({ orderItem, idx }) {
         }))
     }
 
+    const deleteOrderItem = (id) => {
+        const isConfirmed = window.confirm("are you sure to delete order?");
+        if (isConfirmed) {
+            dispatch(deleteOrder(id));
+        }
+    }
+
     return (
-        <tr>
+        <tr key={orderItem.id}>
             <td>{idx + 1}</td>
             <td><img src={`assets/img/${orderItem.img}`} alt={orderItem.title} width="50" /></td>
             <td>{orderItem.title}</td>
@@ -35,13 +42,14 @@ function OrderItem({ orderItem, idx }) {
                     value={status}
                     onChange={e => changeStatus(e.target.value)}>
                     {Object.values(ORDER_STATUS).map(status =>
-                        <MenuItem value={status} key={orderItem.id}>{status}</MenuItem>
+                        <MenuItem value={status} key={status}>{status}</MenuItem>
                     )}
                 </Select>
                 <Button
                     className="ml-2"
                     color="inherit"
-                    disabled={status === ORDER_STATUS.IN_PROGRESS}>
+                    disabled={status === ORDER_STATUS.IN_PROGRESS}
+                    onClick={() => deleteOrderItem(orderItem.id)}>
                     <DeleteForeverIcon />
                 </Button>
             </td>

@@ -11,6 +11,10 @@ function Orders() {
     const coffees = useSelector(state => state.CoffeeReducer);
     const [sortedByStatus, setSortedByStatus] = React.useState(orders);
 
+    React.useEffect(() => {
+        setSortedByStatus(orders);
+    }, [orders])
+
     const getOrder = (order) => {
         const coffee = coffees.find(c => c.id === order.id);
         return ({

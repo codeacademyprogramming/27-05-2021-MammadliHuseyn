@@ -19,3 +19,10 @@ export const editOrder = (order) => {
         payload: order
     }
 }
+
+export const deleteOrder = (id) => {
+    return {
+        type: ACTION_TYPES.DELETE_ORDER,
+        payload: id
+    }
+}
