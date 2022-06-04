@@ -1,0 +1,82 @@
+[
+    {
+        "title": "Black",
+        "img": "black-coffee.webp",
+        "description": "Black coffee is as simple as it gets with ground coffee beans steeped in hot water, served warm. And if you want to sound fancy, you can call black coffee by its proper name: cafe noir.",
+        "ingredients": [
+            "Coffee"
+        ],
+        "id": 1
+    },
+    {
+        "title": "Latte",
+        "img": "latte.webp",
+        "description": "As the most popular coffee drink out there, the latte is comprised of a shot of espresso and steamed milk with just a touch of foam. It can be ordered plain or with a flavor shot of anything from vanilla to pumpkin spice.",
+        "ingredients": [
+            "Espresso",
+            "Steamed Milk"
+        ],
+        "id": 2
+    },
+    {
+        "title": "Cappuccino",
+        "img": "cappucino.webp",
+        "description": "Cappuccino is a latte made with more foam than steamed milk, often with a sprinkle of cocoa powder or cinnamon on top. Sometimes you can find variations that use cream instead of milk or ones that throw in flavor shot, as well.",
+        "ingredients": [
+            "Espresso",
+            "Steamed Milk",
+            "Foam"
+        ],
+        "id": 3
+    },
+    {
+        "title": "Americano",
+        "img": "americano.webp",
+        "description": "With a similar flavor to black coffee, the americano consists of an espresso shot diluted in hot water.",
+        "ingredients": [
+            "Espresso",
+            "Hot Water"
+        ],
+        "id": 4
+    },
+    {
+        "title": "Espresso",
+        "img": "espresso.webp",
+        "description": "An espresso shot can be served solo or used as the foundation of most coffee drinks, like lattes and macchiatos.",
+        "ingredients": [
+            "1oz Espresso"
+        ],
+        "id": 5
+    },
+    {
+        "title": "Cortado",
+        "img": "cortado.jpg",
+        "description": "Like yin and yang, a cortado is the perfect balance of espresso and warm steamed milk. The milk is used to cut back on the espresso’s acidity.",
+        "ingredients": [
+            "1oz Espresso",
+            "1oz Steamed Milk"
+        ],
+        "id": 7
+    },
+    {
+        "title": "Macchiato",
+        "img": "macchiato.webp",
+        "description": "The macchiato is another espresso-based drink that has a small amount of foam on top. It’s the happy medium between a cappuccino and a doppio.",
+        "ingredients": [
+            "Espresso",
+            "Foam"
+        ],
+        "id": 11
+    },
+    {
+        "title": "Mocha",
+        "img": "mocha.webp",
+        "description": "For all you chocolate lovers out there, you’ll fall in love with a mocha (or maybe you already have). The mocha is a chocolate espresso drink with steamed milk and foam.",
+        "ingredients": [
+            "Espresso",
+            "Steamed Milk",
+            "Chocolate"
+        ],
+        "id": 12
+    }
+]

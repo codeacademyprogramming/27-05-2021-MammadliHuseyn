@@ -1,0 +1,58 @@
+@import "bootstrap";
+body {
+  background-color: #00704a;
+}
+table {
+  svg {
+    color: #fff;
+  }
+}
+table .MuiFormControl-root {
+  input,
+  label {
+    color: #fff;
+  }
+}
+
+.navbar {
+  a {
+    margin-right: 1.5rem;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    &:hover {
+      color: gray;
+    }
+  }
+}
+
+#home {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  h1 {
+    font-weight: 700;
+    font-size: 4em;
+    padding: 0 0.3em;
+  }
+}
+
+.card {
+  cursor: pointer;
+  border-radius: 0;
+  height: 25rem;
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(0.9);
+  }
+}
+
+#demo-simple-select-helper {
+  color: #fff;
+}
+
+#th-status {
+  cursor: pointer;
+}
